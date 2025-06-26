@@ -107,8 +107,8 @@ deflection_ok = deflection_ratio <= (20 if beam_type == "Simply Supported" else 
 # -----------------------------
 # Results Summary
 # -----------------------------
-st.markdown("### 📊 " + tr("Design Summary", "Bemessungsübersicht", "Résumé du dimensionnement", "Riepilogo progettazione"))
-st.success(f"""
+st.markdown(f"""
+#### ✅ Design Summary
 - **M<sub>max</sub>** = {M_max:.2f} kNm  
 - **V<sub>max</sub>** = {V_max:.2f} kN  
 - **As<sub>req</sub>** = {As_req * 1e4:.2f} cm² → Ø{phi} × {n_bars}  
